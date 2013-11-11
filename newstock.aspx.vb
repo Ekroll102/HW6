@@ -10,9 +10,4 @@ Partial Class detailsview
         Response.AddHeader("REFRESH", "2;URL=./stocks.aspx")
     End Sub
 
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        lbl_date.Text = DateTime.Now.ToLongDateString
-        lbl_copy.Text = DateTime.Now.Year
-    End Sub
-
 End Class

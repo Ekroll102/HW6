@@ -14,8 +14,5 @@ Partial Class detailsview
     Protected Sub DetailsView1_ItemUpdated(sender As Object, e As DetailsViewUpdatedEventArgs) Handles DetailsView1.ItemUpdated
         Response.Redirect("./stocks.aspx")
     End Sub
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        lbl_date.Text = DateTime.Now.ToLongDateString
-        lbl_copy.Text = DateTime.Now.Year
-    End Sub
+
 End Class
